@@ -46,7 +46,7 @@ enum Mode {
 
 #[derive(Parser, Debug)]
 #[command(
-    name = "real-income",
+    name = "rip",
     about = "Compute the inflation-adjusted (real) value of your income using IMF SDMX (monthly CPI index) or IMF DataMapper (annual inflation)."
 )]
 struct Args {
@@ -109,7 +109,7 @@ async fn main() -> Result<()> {
     let theme = ColorfulTheme::default();
 
     let sdmx_client = Client::builder()
-        .user_agent("real-income/0.3.1 (rust reqwest)")
+        .user_agent("rip/0.3.1 (rust reqwest)")
         .build()
         .context("Failed to build SDMX HTTP client")?;
 
@@ -307,7 +307,7 @@ fn ym_to_sdmx_period(ym: &str) -> Result<String> {
 // ----------------------- Cache dir -----------------------
 fn default_cache_dir() -> Result<PathBuf> {
     let mut dir = dirs::cache_dir().ok_or_else(|| anyhow!("Could not locate a cache directory"))?;
-    dir.push("real-income");
+    dir.push("rip");
     Ok(dir)
 }
 
