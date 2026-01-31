@@ -10,13 +10,13 @@ RIP supports two calculation methods:
 
 ## Features
 
-📈 Accurate inflation adjustment
-🌍 Official IMF data sources
-📅 Monthly or annual resolution
-🧮 Transparent formulas
-🧠 Economically correct methodology
-🖥️ Interactive or fully scripted CLI
-😄 *Optional jokes about inflation*
+* 📈 Accurate inflation adjustment
+* 🌍 Official IMF data sources
+* 📅 Monthly or annual resolution
+* 🧮 Transparent formulas
+* 🧠 Economically correct methodology
+* 🖥️ Interactive or fully scripted CLI
+* 😄 *Optional jokes about inflation*
 
 ## Data Sources
 
