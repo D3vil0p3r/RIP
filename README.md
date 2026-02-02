@@ -47,7 +47,7 @@ In other words: "How much can my income actually buy, after prices have changed?
 ### SDMX mode (CPI index level)
 
 ```math
-RealIncome = NominalIncome × (CPI_start / CPI_latest)
+RealIncome = NominalIncome × (CPI_\text{start} / CPI_\text{latest})
 ```
 
 Where:
